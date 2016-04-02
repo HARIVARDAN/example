@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/back"
+    style="@android:style/Animation">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/lpassword"
+        android:hint="password"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="@android:style/Animation.Activity" />
+
+    <android.inputmethodservice.ExtractEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/luser"
+        android:layout_above="@+id/lpassword"
+        android:layout_alignLeft="@+id/lpassword"
+        android:layout_alignStart="@+id/lpassword"
+        android:layout_marginBottom="25dp"
+        android:layout_alignRight="@+id/lpassword"
+        android:layout_alignEnd="@+id/lpassword"
+        android:hint="user name" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/thinklogo"
+        android:layout_above="@+id/luser"
+        android:layout_alignLeft="@+id/luser"
+        android:layout_alignStart="@+id/luser"
+        android:layout_marginBottom="40dp"
+        android:layout_alignRight="@+id/luser"
+        android:layout_alignEnd="@+id/luser" />
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:src="@drawable/login"
+        android:layout_height="50dp"
+        android:id="@+id/llogin"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/lpassword"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClicklogin" />
+</RelativeLayout>

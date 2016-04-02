@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Registration Form"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#f1205b"
+        android:background="@drawable/back" />
+
+    <EditText
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal"
+        android:hint="name" />
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:layout_gravity="center_horizontal"
+        android:hint="city" />
+
+    <EditText
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:layout_gravity="center_horizontal"
+        android:hint="phone" />
+
+    <EditText
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_gravity="center_horizontal"
+        android:hint="email" />
+
+    <EditText
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passsword"
+        android:layout_gravity="center_horizontal"
+        android:hint="password" />
+
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:text="REGISTER"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/back1"
+        android:onClick="Register" />
+
+</LinearLayout>
